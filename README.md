@@ -23,16 +23,28 @@ Fork this project in GitHub to your own account. Clone repository to your local,
 ```
 git clone https://github.com/davidjnevin/django-template-01
 cd django-template-01
-cp example.env .env  # Edit this file as you want
+```
+Generate a SECRET_KEY
+
+```
+python -c 'from django.core.management.utils import get_random_secret_key; \
+            print(get_random_secret_key())'
+```
+Edit the example.env as needed.
+
+```
+cp example.env .env
 ```
 
 To use this template run
+
 ```
 django-admin startproject --template /path/to/this/template <your_new_project_name>
 ```
+
 Do a find and replace of `{{ project_name }}` in your project folder.
 
-Replace `{{ project_name }}' with <your_new_project_name>
+Replace `{{ project_name }}` with <your_new_project_name>
 
 To run the project:
 
