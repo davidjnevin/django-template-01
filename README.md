@@ -1,8 +1,8 @@
-# Django 4 project setup
+# Django 4 project template
 
 This project is under heavy development.
 
-This project when finished will provide a single repo for a django 4 project for my future projects.
+This project provides a single repo for a django 4 project for my future projects and is inspired by the [python/alicante meetupselector repositoriy.](https://github.com/pythonalicante/MeetupSelector)
 
 ## Prerequisites
 
@@ -16,41 +16,37 @@ This project when finished will provide a single repo for a django 4 project for
 
 - Make ([doc](https://www.gnu.org/software/make/manual/make.html)).
 
-```{todo}Title
-Body Comeback
-```
-
 ## How to install and run the project
 
-Fork this project in GitHub to your own account. Clone repository to your local, navigate to `MeetupSelector` directory and execute the following commands:
+Fork this project in GitHub to your own account. Clone repository to your local, navigate to `django-template-01` directory and run the following commands:
 
 ```
-git clone https://github.com/pythonalicante/MeetupSelector.git
-cd MeetupSelector
+git clone https://github.com/davidjnevin/django-template-01
+cd django-template-01
 cp example.env .env  # Edit this file as you want
-make setup  # To create the virtualenv and install project dependencies
+```
+
+To use this template run
+```
+django-admin startproject --template /path/to/this/template <your_new_project_name>
+```
+Do a find and replace of `{{ project_name }}` in your project folder.
+
+Replace `{{ project_name }}' with <your_new_project_name>
+
+To run the project:
+
+```
 make build  # To create Docker images
 make run  # To run the project
 make createsuperuser  # To create an administrator user in the application
 ```
 
-## Organization
-
-This project manages the Issues and Tasks in [Taiga](https://tree.taiga.io/project/aalmiramolla-meetupselector/kanban). Feel free to open an Issue in GitHub, it's synchronised with Taiga. If you want to collaborate, read the next section.
-
-## How to contribute?
-
-Read [CONTRIBUTING.md](https://github.com/pythonalicante/Meetup-Selector/blob/main/CONTRIBUTING.md).
-
-## Roadmap
-
-To view the project roadmap, read the [roadmap section on documentation](https://pythonalicante.github.io/MeetupSelector/roadmap/).
-
-
 ## Contributors
 
-<a href="https://github.com/pythonalicante/meetupselector/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=pythonalicante/meetupselector" />
+<a href="https://github.com/davidjnevin/django-template-01/graphs/contributors">
+  <img
+  src="https://contributors-img.web.app/image?repo=davidjnevin/django-template-01" />
 </a>
 
 Made with [contributors-img](https://contributors-img.web.app).
@@ -61,6 +57,4 @@ This software is released under the [GPLv3 license](LICENSE).
 
 ## Contact
 
-- [Discord](https://discord.com/invite/aDdTHZSggd).
-- [Telegram](https://t.me/python_alc).
-- [Twitter](https://twitter.com/python_alc) #PythonALC.
+- [Twitter](https://twitter.com/davidjnevin) @davidjnevin.
